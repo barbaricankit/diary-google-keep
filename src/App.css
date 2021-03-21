@@ -1,0 +1,111 @@
+
+:root {
+  --pinIconImg: "./Images/push-pin.png";
+}
+
+.App {
+  text-align: center;
+}
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "nav main";
+}
+.navBar {
+  grid-area: "nav";
+  text-align: start;
+  margin: 1rem;
+}
+.mainContent {
+  grid-area: "main";
+}
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.addNote {
+  padding: 2rem;
+  border: 0.5px solid white;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: start;
+}
+.noteInputBox {
+  background-color: #282c34;
+  color: white;
+  width: 90%;
+  font-size: large;
+  border: 0;
+  margin: 0;
+}
+.noteText {
+  padding: 2rem 1rem;
+  outline: none;
+}
+.noteTitle {
+  padding: 0.5rem 1rem;
+  width: 80%;
+  outline: none;
+}
+.pinIcon {
+  float: right;
+  margin-bottom: 1rem;
+}
+.saveBtn {
+  cursor: pointer;
+}
+.tag {
+  margin: 1rem;
+  cursor: pointer;
+}
+.tagTextBox {
+  padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+  width: 36%;
+  background-color: #282c34;
+  border: 0.5px solid white;
+  border-radius: 1000px;
+  color: white;
+}
+
+.tagBtnOption {
+  position: relative;
+}
+.tagLabel,
+.colorLabel {
+  background-color: #414347;
+  border: 0.5px solid white;
+  position: absolute;
+  border-radius: 10px;
+}
+.noteProperties {
+  display: flex;
+  justify-content: space-between;
+}
